@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7b769ab10.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="product_container" id="productContainer">
+        <div class="product_image_container">
+            <img id="mainImage" src="" alt="Product Image">
+            <div class="thumbnail_container" id="thumbnailContainer"></div>
+        </div>
+        <div class="product_details">
+            <h3 id="vendor"></h3>
+            <h2 id="title"></h2>
+            <div class="priceoff">
+                <p id="price"></p>
+                <p id="percentageOff"></p>
+            </div>
+            <p id="compareAtPrice"></p>
+            <div class="colors">
+                <p>Choose a Color</p>
+                <div id="colorSelector"></div>
+            </div>
+            <div class="sizes">
+                <p>Choose a Size</p>
+                <div id="sizeSelector"></div>
+            </div>
+            <div class="addcart">
+                <div class="quantity_container">
+                    <button id="decreaseQuantity" class="quantity_button">-</button>
+                    <input type="number" id="quantity" min="1" value="1">
+                    <button id="increaseQuantity" class="quantity_button">+</button>
+                </div>
+                <button id="addToCartBtn"><i class="fa-solid fa-cart-shopping"></i><p>Add to Cart</p></button>
+            </div>
+            
+            
+            <p id="cartMessage" style="display: none;"></p>
+            <div id="description"></div>
+        </div>
+    </div>
+</body>
+</html>
